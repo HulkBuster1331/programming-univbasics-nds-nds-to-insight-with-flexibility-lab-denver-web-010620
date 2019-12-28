@@ -62,7 +62,11 @@ def movies_with_director_key(name, movies_collection)
  
  
 def gross_per_studio(collection)
+<<<<<<< HEAD
    
+=======
+    #binding.pry
+>>>>>>> b69af207d405bfbf645ae1645fe725f10653d9e0
     studio_gross = 0
      final_list = {}
      i = 0
@@ -87,6 +91,7 @@ def gross_per_studio(collection)
   
 
 def movies_with_directors_set(source)
+<<<<<<< HEAD
  #binding.pry
   i = 0 
    new_mov_arr = []
@@ -106,6 +111,23 @@ def movies_with_directors_set(source)
      new_mov_arr
    end
  
+=======
+ binding.pry
+  i = 0 
+   new_mov_arr = []
+    
+    if new_mov_arr.has_key?  source[0][:name]
+       new_mov_arr[soure[0][:name]] += source[0][:name]
+     else 
+       new_mov_arr = source[0][:name]
+ 
+ 
+ 
+ 
+   end
+ 
+ end
+>>>>>>> b69af207d405bfbf645ae1645fe725f10653d9e0
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
   # INPUT:
